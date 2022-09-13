@@ -55,7 +55,7 @@ p {
   width: 680px;
   height: 320px;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(1, 430px);
+  grid-template-rows: repeat(1, auto);
   /* grid-gap: 20px; */
   /* Grid Settings End */
   background-color: var(--container-color);
@@ -64,20 +64,21 @@ p {
 }
 
 .left-container {
-  height: 280px;
-  width: 300px;
+  /* height: 280px;
+  width: 300px; */
+margin: 20px 10px 20px 35px;
 }
 
 .right-container {
   background-color: var(--right-container-color);
   margin: 20px 20px 20px 10px;
   border-radius: 20px;
-  height: 280px;
-  width: 300px;
+  /* height: 280px;
+  width: 300px; */
 }
 
 .left-inner-container {
-  margin: 20px 0 20px 35px;
+  margin-right: 20px;
   border-radius: 20px;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -114,7 +115,7 @@ p {
 
 .input-container {
   position: relative;
-  width: 222px;
+  width: 232px;
 }
 
 .input-container>img {
@@ -191,7 +192,7 @@ input::-webkit-inner-spin-button {
   background-color: var(--body-backgorund);
   color: var(--right-container-color);
   font-weight: bold;
-  width: 79px;
+  width: 90px;
   height: 28px;
   text-align: center;
 }
@@ -238,18 +239,28 @@ input::-webkit-inner-spin-button {
     /* Grid Settings */
     display: grid;
     width: 320px;
-    height: 640px;
+    height: 600px;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, auto);
     grid-gap: 25px;
     /* Grid Settings End */
   }
 
+  .input-item {
+
+    width: 212px;
+  }
+
+  .zero-warning-container {
+
+    margin-top: 0;
+  }
+
   .right-container {
-    width: 280px;
+    width: 260px;
     height: 230px;
     margin: 5% auto;
-    margin-top: 50px;
+    margin-top: -25px;
   }
 
   .btn-container {
@@ -270,7 +281,7 @@ input::-webkit-inner-spin-button {
   }
 
   .input-custom {
-    width: 125px;
+    width: 120px;
     height: 28px;
   }
 }
